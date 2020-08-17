@@ -759,7 +759,7 @@
 
         <div class="form-group">
           <label for="exampleInputEmail1">Primeiro Nome:</label>
-          <input type="text" name="name" value="{{ $user->name }}" class="form-control" id="exampleInputEmail1"/>
+          <input type="text123"  name="name" value="{{ $user->name }}" class="form-control" id="exampleInputEmail1"/>
         </div>
         </div>
         <div class="col-sm-6">
