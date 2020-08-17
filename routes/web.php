@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('User', 'UserController');
+Route::get('perfil/editar', 'UserController@userEdit')->name('editar');
+Route::patch('perfil/atualizar', 'UserController@userUpdate')->name('atualizar');
